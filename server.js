@@ -2,12 +2,12 @@ const express = require("express");
 
 const app = express();
 
-app.use(express.static("public"));
+app.use('/public', express.static(process.cwd() + '/public'));
 
-app.route("/")
-  .get( (req, res) => {
-    res.sendFile(__dirname + "/index.html");
-  })
+app.route('/')
+  .get(function (req, res) {
+    res.sendFile(process.cwd() + '/views/index.html');
+  });
 
 //404 Not Found Middleware
 app.use(function(req, res, next) {
