@@ -1,5 +1,5 @@
 const express = require("express");
-
+require("dotenv").config();
 const app = express();
 
 app.use('/public', express.static(process.cwd() + '/public'));
@@ -15,6 +15,6 @@ app.use(function(req, res, next) {
     .type('text')
     .send('Not Found');
 });
-app.listen(3000, () => {
-  console.log("Listening on port 3000");
+app.listen(process.env.PORT, () => {
+  console.log("Listening on PORT");
 });
