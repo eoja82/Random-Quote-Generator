@@ -1,3 +1,5 @@
+// run when editing: npx babel --watch src --out-dir . --presets react-app/prod
+
 const quotes = [
   {
     quote: "Don't cry because it's over, smile because it happened.",
@@ -63,8 +65,8 @@ class Presentational extends React.Component {
         </div>
         <div class="row">
           <p class="col-md-3"></p>
-          <button id="new-quote" class="btn btn-default col-md-1" onClick={this.newQuote}>New Quote</button>
-          <p class="col-md-3"></p>
+          <button id="new-quote" class="btn btn-default col-md-2" onClick={this.newQuote}>New Quote</button>
+          <p class="col-md-2"></p>
           <a id="tweet-quote" href="http://twitter.com/intent/tweet" onClick={this.sendTweet} class="text-right"><button class="btn btn-default col-md-2">Tweet Quote <i class="fa fa-twitter"></i></button></a>
           <p class="col-md-3"></p>
         </div>
