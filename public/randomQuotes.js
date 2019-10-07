@@ -8,25 +8,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 // run when editing: npx babel --watch src --out-dir public --presets react-app/prod
 
-var quotes = [{
-  quote: "Don't cry because it's over, smile because it happened.",
-  author: "Dr. Seuss"
-}, {
-  quote: "You only live once, but if you do it right, once is enough.",
-  author: "Mae West"
-}, {
-  quote: "Be yourself; everyone else is already taken.",
-  author: "Oscar Wilde"
-}, {
-  quote: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
-  author: "Albert Einstein"
-}, { quote: "So many books, so little time.", author: "Frank Zappa" }, {
-  quote: "A room without books is like a body without a soul.",
-  author: "Marcus Tullius Cicero"
-}, {
-  quote: "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.",
-  author: "J.K. Rowling"
-}];
+import { quotes } from "./quotes.js";
 
 var Presentational = function (_React$Component) {
   _inherits(Presentational, _React$Component);
