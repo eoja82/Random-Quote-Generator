@@ -15,11 +15,13 @@ class Presentational extends React.Component {
       const randNumber = Math.floor(Math.random() * quotes.length);
       this.setState({ quote: quotes[randNumber].quote, author: quotes[randNumber].author })
   }
-
   sendTweet = () => {
     const url = "twitter.com";
     const text = this.state.quote.concat(" - ").concat(this.state.author);
     window.open('http://twitter.com/share?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(text), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+  }
+  componentDidMount() {
+    this.newQuote();
   }
   render() {
     return (

@@ -39,6 +39,11 @@ var Presentational = function (_React$Component) {
       this.setState({ quote: quotes[randNumber].quote, author: quotes[randNumber].author });
     }
   }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.newQuote();
+    }
+  }, {
     key: "render",
     value: function render() {
       return React.createElement(
