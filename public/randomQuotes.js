@@ -58,7 +58,7 @@ var Presentational = function (_React$Component) {
             { "class": "text-center col-md-6" },
             "Random Quotes:"
           ),
-          React.createElement("h1", { "class": "col-md-3" })
+          React.createElement("h1", { "class": "col-sm-3" })
         ),
         React.createElement(
           "div",
@@ -96,14 +96,11 @@ var Presentational = function (_React$Component) {
           ),
           React.createElement("p", { "class": "col-md-2" }),
           React.createElement(
-            "a",
-            { id: "tweet-quote", href: "http://twitter.com/intent/tweet", onClick: this.sendTweet, "class": "text-right" },
-            React.createElement(
-              "button",
-              { "class": "btn btn-default col-md-2" },
-              "Tweet Quote ",
-              React.createElement("i", { "class": "fa fa-twitter" })
-            )
+            "button",
+            { "class": "btn btn-default col-md-2", onClick: this.sendTweet },
+            React.createElement("a", { id: "tweet-quote", href: "http://twitter.com/intent/tweet", "class": "text-right" }),
+            "Tweet Quote ",
+            React.createElement("i", { "class": "fa fa-twitter" })
           ),
           React.createElement("p", { "class": "col-md-3" })
         )

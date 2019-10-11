@@ -29,7 +29,7 @@ class Presentational extends React.Component {
         <div class="row">
           <h1 class="col-md-3"></h1>
           <h1 class="text-center col-md-6">Random Quotes:</h1>
-          <h1 class="col-md-3"></h1>
+          <h1 class="col-sm-3"></h1>
         </div>
         <div class="row">
           <p class="col-md-3"></p>
@@ -43,7 +43,7 @@ class Presentational extends React.Component {
           <p class="col-md-3"></p>
           <button id="new-quote" class="btn btn-default col-md-2" onClick={this.newQuote}>New Quote</button>
           <p class="col-md-2"></p>
-          <a id="tweet-quote" href="http://twitter.com/intent/tweet" onClick={this.sendTweet} class="text-right"><button class="btn btn-default col-md-2">Tweet Quote <i class="fa fa-twitter"></i></button></a>
+          <button class="btn btn-default col-md-2" onClick={this.sendTweet}><a id="tweet-quote" href="http://twitter.com/intent/tweet" class="text-right"></a>Tweet Quote <i class="fa fa-twitter"></i></button>
           <p class="col-md-3"></p>
         </div>
       </div>

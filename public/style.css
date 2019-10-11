@@ -1,4 +1,13 @@
-body {background-color: green; color: white;}
+body {
+  background-color: green; color: white;
+}
 #quote-box {
   margin-top: 80px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+@media only screen and (max-width: 576px) {
+  button {
+    width: 100%;
+  }
 }
