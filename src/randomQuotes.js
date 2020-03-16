@@ -27,24 +27,24 @@ class Presentational extends React.Component {
     return (
       <div id="quote-box" class="container">
         <div class="row">
-          <h1 class="col-md-3"></h1>
-          <h1 class="text-center col-md-6">Random Quotes:</h1>
+          <h1 class="col-sm-3"></h1>
+          <h1 class="text-center col-sm-6">Random Quotes:</h1>
           <h1 class="col-sm-3"></h1>
         </div>
         <div class="row">
-          <p class="col-md-3"></p>
-          <blockquote class="col-md-6">
+          <p class="col-sm-3"></p>
+          <blockquote class="col-sm-6">
             <p id="text"><i class="fa fa-quote-left"></i> {this.state.quote} <i class="fa fa-quote-right"></i></p>
             <cite id="author">-- {this.state.author}</cite>
           </blockquote>
-          <p class="col-md-3"></p>
+          <p class="col-sm-3"></p>
         </div>
         <div class="row">
-          <p class="col-md-3"></p>
-          <button id="new-quote" class="btn btn-default col-md-2" onClick={this.newQuote}>New Quote</button>
-          <p class="col-md-2"></p>
-          <button class="btn btn-default col-md-2" onClick={this.sendTweet}><a id="tweet-quote" href="http://twitter.com/intent/tweet" class="text-right"></a>Tweet Quote <i class="fa fa-twitter"></i></button>
-          <p class="col-md-3"></p>
+          <p class="col-sm-3"></p>
+          <button id="new-quote" class="btn btn-default col-sm-2" onClick={this.newQuote}>New Quote</button>
+          <p class="col-sm-2"></p>
+          <button class="btn btn-default col-sm-2" onClick={this.sendTweet}><a id="tweet-quote" href="http://twitter.com/intent/tweet" class="text-right"></a>Tweet Quote <i class="fa fa-twitter"></i></button>
+          <p class="col-sm-3"></p>
         </div>
       </div>
     );

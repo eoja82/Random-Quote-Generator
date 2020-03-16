@@ -52,10 +52,10 @@ var Presentational = function (_React$Component) {
         React.createElement(
           "div",
           { "class": "row" },
-          React.createElement("h1", { "class": "col-md-3" }),
+          React.createElement("h1", { "class": "col-sm-3" }),
           React.createElement(
             "h1",
-            { "class": "text-center col-md-6" },
+            { "class": "text-center col-sm-6" },
             "Random Quotes:"
           ),
           React.createElement("h1", { "class": "col-sm-3" })
@@ -63,10 +63,10 @@ var Presentational = function (_React$Component) {
         React.createElement(
           "div",
           { "class": "row" },
-          React.createElement("p", { "class": "col-md-3" }),
+          React.createElement("p", { "class": "col-sm-3" }),
           React.createElement(
             "blockquote",
-            { "class": "col-md-6" },
+            { "class": "col-sm-6" },
             React.createElement(
               "p",
               { id: "text" },
@@ -83,26 +83,26 @@ var Presentational = function (_React$Component) {
               this.state.author
             )
           ),
-          React.createElement("p", { "class": "col-md-3" })
+          React.createElement("p", { "class": "col-sm-3" })
         ),
         React.createElement(
           "div",
           { "class": "row" },
-          React.createElement("p", { "class": "col-md-3" }),
+          React.createElement("p", { "class": "col-sm-3" }),
           React.createElement(
             "button",
-            { id: "new-quote", "class": "btn btn-default col-md-2", onClick: this.newQuote },
+            { id: "new-quote", "class": "btn btn-default col-sm-2", onClick: this.newQuote },
             "New Quote"
           ),
-          React.createElement("p", { "class": "col-md-2" }),
+          React.createElement("p", { "class": "col-sm-2" }),
           React.createElement(
             "button",
-            { "class": "btn btn-default col-md-2", onClick: this.sendTweet },
+            { "class": "btn btn-default col-sm-2", onClick: this.sendTweet },
             React.createElement("a", { id: "tweet-quote", href: "http://twitter.com/intent/tweet", "class": "text-right" }),
             "Tweet Quote ",
             React.createElement("i", { "class": "fa fa-twitter" })
           ),
-          React.createElement("p", { "class": "col-md-3" })
+          React.createElement("p", { "class": "col-sm-3" })
         )
       );
     }
