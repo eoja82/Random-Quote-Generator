@@ -2,11 +2,12 @@ body {
   background-color: green; color: white;
 }
 #quote-box {
-  margin-top: 80px;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 80px 2% 0;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 440px) {
+  #quote-box {
+    margin-top: 20px;
+  }
   button {
     width: 100%;
   }
