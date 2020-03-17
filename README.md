@@ -1,4 +1,4 @@
 # Random Quote Generator
-Built utilizing React
+Built with React.
 
-Live demo here: https://eoja82-random-quote-generator.glitch.me/
+Live demo here: https://eoja82-random-quote-generator.glitch.me/.
