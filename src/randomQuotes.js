@@ -1,4 +1,4 @@
-// run when editing: npx babel --watch src --out-dir public --presets react-app/prod
+// run when editing: npx babel --watch src --out-dir . --presets react-app/prod
 
 import { quotes } from "./quotes.js";
 
